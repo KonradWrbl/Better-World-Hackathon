@@ -5,6 +5,11 @@ import Additions from "./pages/Additions/Additions";
 import GlobalStyle from "./assets/styles/globalStyle";
 import theme from "./assets/styles/theme";
 import { ThemeProvider } from "styled-components";
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHome, faChartPie, faLink, faCog, faChevronUp, faChevronDown } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faHome, faChartPie, faLink, faCog, faChevronUp, faChevronDown)
+
 
 function App() {
   return (
