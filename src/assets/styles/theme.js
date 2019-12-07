@@ -22,7 +22,8 @@ const theme = {
     plainText: "#333",
     lightGrey: "#f7f7f7",
     grey: "#DEDEDE",
-    red: "#E54B4D"
+    red: "#E54B4D",
+    shadow: 'rgba(34, 86, 201, .16)'
   }
 };
 
