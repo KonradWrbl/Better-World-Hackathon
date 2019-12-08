@@ -33,6 +33,7 @@ export const LoginWrapper = styled.div`
                 ::placeholder {
                     opacity: .5;
                 }
+            }
         }
     }
 

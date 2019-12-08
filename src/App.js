@@ -9,6 +9,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome, faChartPie, faLink, faCog, faChevronUp, faChevronDown, faTimes } from '@fortawesome/free-solid-svg-icons'
 import BottomMenu from "./components/BottomMenu/BottomMenu";
 import Login from "./pages/Login/Login";
+import Shop from "./pages/Shop/Shop";
 
 library.add(faHome, faChartPie, faLink, faCog, faChevronUp, faChevronDown, faTimes)
 
@@ -28,6 +29,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/shop">
+            <Shop />
           </Route>
         </Switch>
       </Router>

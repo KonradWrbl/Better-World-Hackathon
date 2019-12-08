@@ -2,6 +2,7 @@ import React from 'react';
 import { MainContainer } from './styles.js'
 import BottomMenuIcon from '../BottomMenuIcon/BottomMenuIcon'
 
+
 const BottomMenu = () => {
     return(
         <MainContainer>
