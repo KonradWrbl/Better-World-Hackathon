@@ -21,6 +21,11 @@ const GlobalStyle = createGlobalStyle`
 		font-size: 1.2rem; 
 	}
 
+	h2 {
+		margin: 0;
+		font-size: ${({theme}) => theme.font.m}
+	}
+
 	#root {
 		height: calc(100vh - 48px);
 	}
