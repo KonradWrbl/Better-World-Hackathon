@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Map from "../../components/Map/Map";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,13 +11,19 @@ import {
   DropText
 } from "./styles";
 import SavedSection from "../../components/SavedSection/SavedSection";
+import AdditionsSection from "../../components/AdditionsSection/AdditionsSection";
 
 const Home = () => {
+  const [slided, toggleSlide] = useState(false);
+  const handleClick = () => {
+    toggleSlide(!slided);
+  };
+
   return (
     <div>
-      <Map />
-      <ContentWrapper>
-        <SlideButton>
+      <Map handleClick={handleClick} />
+      <ContentWrapper slided={slided}>
+        <SlideButton onClick={handleClick}>
           <FontAwesomeIcon icon="chevron-up" />
         </SlideButton>
         <DropWrapper>
@@ -30,6 +36,7 @@ const Home = () => {
           <AddButton>+</AddButton>
         </DropWrapper>
         <SavedSection />
+        <AdditionsSection />
       </ContentWrapper>
     </div>
   );

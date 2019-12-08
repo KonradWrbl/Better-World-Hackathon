@@ -22,6 +22,7 @@ export const Tile = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 3px 10px ${({ theme }) => theme.colors.shadow};
 
   img {
     margin-right: 5px;
