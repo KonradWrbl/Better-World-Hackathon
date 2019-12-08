@@ -28,6 +28,8 @@ const GlobalStyle = createGlobalStyle`
 
 	#root {
 		height: calc(100vh - 48px);
+		height: 100%
+		background-color: ${({theme}) => theme.colors.lightGrey};
 	}
 `;
 

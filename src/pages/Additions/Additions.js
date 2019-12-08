@@ -4,6 +4,37 @@ import { AdditionsWrapper } from "./styles";
 import Ingredient from "./Ingredient/Ingredient";
 
 const Additions = () => {
+
+  const elementsListAccepted = [
+    {
+      elementSymbol: 'Mg',
+      elementName: 'Magnesium',
+      quantity: 10,
+    },
+    {
+      elementSymbol: 'Ca',
+      elementName: 'Calcium'
+    },
+    {
+      elementSymbol: 'K',
+      elementName: 'Potassium'
+    },
+    {
+      elementSymbol: 'Se',
+      elementName: 'Selenium'
+    },
+  ]
+
+  const elementsListDeny = []
+
+  const listIngredientsA = elementsListAccepted.map((element) => 
+    <Ingredient element={element.elementSymbol} accepted/>
+  )
+
+  const listIngredientsD = elementsListDeny.map((element) => 
+    <Ingredient element={element.elementSymbol} />
+  ) 
+
   return (
     <AdditionsWrapper>
       <img src={wave} alt='wave'/>
@@ -13,11 +44,9 @@ const Additions = () => {
         Choose microelements manually or connect this app with your diet app 
         and let it choose the ingredients to complement your diet.
       </p>
-      <Ingredient element='Mg'/>
-      <Ingredient element='Ca'/>
-      <Ingredient element='K'/>
-      <Ingredient element='Se'/>
-      
+      {listIngredientsA} 
+      {elementsListDeny || elementsListAccepted == [] ? null : <hr />}
+      {listIngredientsD}   
     </AdditionsWrapper>
   );
 };
