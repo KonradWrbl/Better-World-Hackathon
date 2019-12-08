@@ -7,6 +7,8 @@ export const ContentWrapper = styled.div`
     `linear-gradient(transparent , ${theme.colors.lightGrey}, ${theme.colors.lightGrey}, ${theme.colors.lightGrey})`};
   min-height: calc(100vh - 48px);
   padding: 0 20px;
+  transform: ${({ slided }) => (slided ? "translateY(100%)" : "translateY(0)")};
+  transition: transform 0.25s ease-in-out;
 `;
 
 export const SlideButton = styled.button`
@@ -19,7 +21,7 @@ export const SlideButton = styled.button`
 `;
 
 export const DropWrapper = styled.div`
-  margin-top: 50px;
+  margin-top: 15px;
   text-align: center;
   position: relative;
 
