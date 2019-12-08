@@ -47,6 +47,11 @@ export const AddButton = styled.button`
   transform: translate(-50%, 20%);
   box-shadow: 0 3px 15px ${({ theme }) => theme.colors.shadow};
   outline: none;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 `;
 
 export const DropText = styled.div`
@@ -69,6 +74,6 @@ export const DropUnit = styled.div`
 `;
 
 export const StyledWrapper = styled.div`
-  height: calc(100% - 48px);
+  height: 100%;
   overflow-y: hidden;
 `;

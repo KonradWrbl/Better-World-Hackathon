@@ -11,8 +11,7 @@ const Map = ({ handleClick }) => {
       <iframe
         title="map"
         src="https://www.google.com/maps/d/embed?mid=15eKmT6omVwczVIfuqd9YrkPFx-FbqFLh"
-        width="360"
-        height="640"
+        onLoad={() => "this.width=screen.width;this.height=screen.height;"}
       ></iframe>
     </MapWrapper>
   );

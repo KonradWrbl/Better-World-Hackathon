@@ -3,9 +3,13 @@ import styled from "styled-components";
 export const MapWrapper = styled.div`
   position: absolute;
   top: -51px;
+  width: 100%;
+  height: 100vh;
 
   iframe {
     border: 0;
+    width: 100%;
+    height: 100vh;
   }
 
   &::after {

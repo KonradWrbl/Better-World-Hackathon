@@ -13,6 +13,7 @@ import {
 } from "./styles";
 import SavedSection from "../../components/SavedSection/SavedSection";
 import AdditionsSection from "../../components/AdditionsSection/AdditionsSection";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [slided, toggleSlide] = useState(false);
@@ -34,7 +35,9 @@ const Home = () => {
             <DropNum>9,45</DropNum>
             <DropUnit>liters</DropUnit>
           </DropText>
-          <AddButton>+</AddButton>
+          <AddButton>
+            <Link to="/shop"> + </Link>
+          </AddButton>
         </DropWrapper>
         <SavedSection />
         <AdditionsSection />
