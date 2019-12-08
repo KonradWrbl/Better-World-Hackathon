@@ -23,11 +23,10 @@ const GlobalStyle = createGlobalStyle`
 
 	h2 {
 		margin: 0;
-		font-size: ${({theme}) => theme.font.m}
+		font-size: ${({ theme }) => theme.font.m}
 	}
 
 	#root {
-		height: calc(100vh - 48px);
 		height: 100vh;
 		background-color: ${({theme}) => theme.colors.lightGrey};
 	}

@@ -8,10 +8,12 @@ import {
   AddButton,
   DropNum,
   DropUnit,
-  DropText
+  DropText,
+  StyledWrapper
 } from "./styles";
 import SavedSection from "../../components/SavedSection/SavedSection";
 import AdditionsSection from "../../components/AdditionsSection/AdditionsSection";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [slided, toggleSlide] = useState(false);
@@ -20,7 +22,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <StyledWrapper slided={slided}>
       <Map handleClick={handleClick} />
       <ContentWrapper slided={slided}>
         <SlideButton onClick={handleClick}>
@@ -33,12 +35,14 @@ const Home = () => {
             <DropNum>9,45</DropNum>
             <DropUnit>liters</DropUnit>
           </DropText>
-          <AddButton>+</AddButton>
+          <AddButton>
+            <Link to="/shop"> + </Link>
+          </AddButton>
         </DropWrapper>
         <SavedSection />
         <AdditionsSection />
       </ContentWrapper>
-    </div>
+    </StyledWrapper>
   );
 };
 

@@ -1,7 +1,13 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Redirect
+} from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Additions from "./pages/Additions/Additions";
+import Stats from "./pages/Stats/Stats";
 import GlobalStyle from "./assets/styles/globalStyle";
 import theme from "./assets/styles/theme";
 import { ThemeProvider } from "styled-components";
@@ -44,6 +50,9 @@ function App() {
           <Route path="/login">
             <Login />
           </Route>
+          <Route path="/stats">
+            <Stats />
+        </Route>
           <Route path="/shop">
             <Shop />
           </Route>
