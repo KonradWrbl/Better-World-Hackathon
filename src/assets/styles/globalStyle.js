@@ -8,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 	html, body {
 		padding: 0;
 		margin: 0;
+		overflow-x: hidden;
 	}
 
 	html {
@@ -18,6 +19,10 @@ const GlobalStyle = createGlobalStyle`
 		font-family: 'Montserrat', sans-serif;
 		font-size: 12px; 
 		font-size: 1.2rem; 
+	}
+
+	#root {
+		height: calc(100vh - 48px);
 	}
 `;
 
