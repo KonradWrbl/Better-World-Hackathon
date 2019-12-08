@@ -5,27 +5,10 @@ import DeleteButton from '../DeleteButton/DeleteButton';
 
 const Ingredients = ({element}) => {
 
-    const checkElement = () => {
-        switch (element) {
-            case 'Mg':
-                return 'Magnesium'
-            case 'Ca':
-                return 'Calcium'
-            case 'K':
-                return 'Potassium';
-            case 'Se':
-                return 'Selenium';
-            default:
-                return;
-        }
-    }
-
-    const elementName = checkElement();
-
     return (
-        <IngredientContainer element={element}>
-            <Element element={element}/>
-            <ElementName>{elementName}</ElementName>
+        <IngredientContainer element={element.symbol}>
+            <Element element={element.symbol}/>
+            <ElementName>{element.name}</ElementName>
             <DeleteButton />
         </IngredientContainer>
     )
