@@ -25,4 +25,8 @@ export const AdditionsWrapper = styled.div`
         font-weight: ${({theme}) => theme.font.weight.regular}
 
     }
+
+    hr {
+        opacity: .16;
+    }
 `

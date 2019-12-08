@@ -14,7 +14,7 @@ const Ingredients = ({element}) => {
             case 'K':
                 return 'Potassium';
             case 'Se':
-                return 'Calcium';
+                return 'Selenium';
             default:
                 return;
         }

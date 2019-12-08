@@ -7,7 +7,7 @@ export const MainContainer = styled.div`
     height: 48px;
     background-color: #fff;
     box-shadow: ${({theme}) => theme.colors.shadow} 0 0 15px;
-    display: flex;
     align-items: center;
     justify-content: space-around;
+    display: ${window.location.pathname === '/login' ? 'none' : 'flex'}
 `
