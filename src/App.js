@@ -24,7 +24,7 @@ function App() {
           <Route path="/additions">
             <Additions />
           </Route>
-        </Switch>      
+        </Switch>
       </Router>
       <BottomMenu />
     </ThemeProvider>
