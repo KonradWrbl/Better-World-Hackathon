@@ -67,3 +67,8 @@ export const DropUnit = styled.div`
   text-transform: uppercase;
   letter-spacing: 6px;
 `;
+
+export const StyledWrapper = styled.div`
+  height: calc(100% - 48px);
+  overflow-y: hidden;
+`;

@@ -8,7 +8,8 @@ import {
   AddButton,
   DropNum,
   DropUnit,
-  DropText
+  DropText,
+  StyledWrapper
 } from "./styles";
 import SavedSection from "../../components/SavedSection/SavedSection";
 import AdditionsSection from "../../components/AdditionsSection/AdditionsSection";
@@ -20,7 +21,7 @@ const Home = () => {
   };
 
   return (
-    <div>
+    <StyledWrapper slided={slided}>
       <Map handleClick={handleClick} />
       <ContentWrapper slided={slided}>
         <SlideButton onClick={handleClick}>
@@ -38,7 +39,7 @@ const Home = () => {
         <SavedSection />
         <AdditionsSection />
       </ContentWrapper>
-    </div>
+    </StyledWrapper>
   );
 };
 

@@ -11,12 +11,12 @@ export const MapWrapper = styled.div`
   &::after {
     content: "";
     width: 100%;
-    height: 70px;
+    height: 80px;
     position: absolute;
     bottom: 0;
     left: 0;
     background: ${({ theme }) =>
-      `linear-gradient(transparent, ${theme.colors.lightGrey} 100%)`};
+      `linear-gradient(transparent, ${theme.colors.lightGrey} 88%)`};
   }
 `;
 
