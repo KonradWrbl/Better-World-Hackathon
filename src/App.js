@@ -23,6 +23,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import BottomMenu from "./components/BottomMenu/BottomMenu";
 import Login from "./pages/Login/Login";
+import Shop from "./pages/Shop/Shop";
 
 library.add(
   faHome,
@@ -51,6 +52,9 @@ function App() {
           </Route>
           <Route path="/stats">
             <Stats />
+        </Route>
+          <Route path="/shop">
+            <Shop />
           </Route>
         </Switch>
         <BottomMenu />
