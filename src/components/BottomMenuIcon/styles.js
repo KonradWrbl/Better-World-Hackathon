@@ -1,15 +1,11 @@
-import styled from 'styled-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styled from "styled-components";
 
 export const IconsContainer = styled.span`
-    padding: 10px;
-    display: inline-block;
-
-    svg {
-        fill: ${({ theme }) => theme.colors.text};
-        opacity: .16;
-    }
-`
+  padding: 10px;
+  display: inline-block;
+  transform: ${({ active }) => (active ? "scale(1.5)" : "scale(1)")};
+  transition: transfrom 0.25s ease-in-out;
+`;
 
 // export const FABOttomMenuIcon = styled(FontAwesomeIcon)`
 //     font-size: 20px;

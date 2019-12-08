@@ -29,7 +29,6 @@ library.add(
 );
 
 function App() {
-
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
@@ -45,8 +44,8 @@ function App() {
             <Login />
           </Route>
         </Switch>
+        <BottomMenu />
       </Router>
-      <BottomMenu />
     </ThemeProvider>
   );
 }

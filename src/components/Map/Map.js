@@ -9,6 +9,7 @@ const Map = ({ handleClick }) => {
         <FontAwesomeIcon icon="chevron-down" />
       </BackButton>
       <iframe
+        title="map"
         src="https://www.google.com/maps/d/embed?mid=15eKmT6omVwczVIfuqd9YrkPFx-FbqFLh"
         width="360"
         height="640"
