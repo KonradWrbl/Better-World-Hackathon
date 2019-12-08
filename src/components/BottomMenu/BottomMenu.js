@@ -1,17 +1,25 @@
-import React from 'react';
-import { MainContainer } from './styles.js'
-import BottomMenuIcon from '../BottomMenuIcon/BottomMenuIcon'
+import React from "react";
+import { MainContainer } from "./styles.js";
+import BottomMenuIcon from "../BottomMenuIcon/BottomMenuIcon";
+import { withRouter, Link } from "react-router-dom";
 
+const BottomMenu = props => {
+  const location = props.location.pathname;
+  const icons = [
+    { icon: "home", path: "/" },
+    { icon: "cog", path: "/additions" },
+    { icon: "chart-pie", path: "/stats" },
+    { icon: "link", path: "/share" }
+  ];
+  return (
+    <MainContainer>
+      {icons.map((el, i) => (
+        <Link key={el.icon} to={el.path}>
+          <BottomMenuIcon icon={el.icon} active={el.path === location} />
+        </Link>
+      ))}
+    </MainContainer>
+  );
+};
 
-const BottomMenu = () => {
-    return(
-        <MainContainer>
-            <BottomMenuIcon icon='home'/>
-            <BottomMenuIcon icon='chart-pie'/>
-            <BottomMenuIcon icon='link'/>
-            <BottomMenuIcon icon='cog'/>
-        </MainContainer>
-    )
-}
-
-export default BottomMenu;
+export default withRouter(BottomMenu);
