@@ -9,7 +9,7 @@ const BottomMenu = props => {
     { icon: "home", path: "/" },
     { icon: "cog", path: "/additions" },
     { icon: "chart-pie", path: "/stats" },
-    { icon: "link", path: "/share" }
+    { icon: "link", path: "/shop" }
   ];
   return (
     <MainContainer>

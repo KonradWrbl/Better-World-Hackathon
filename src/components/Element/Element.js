@@ -1,13 +1,12 @@
-import React from 'react';
-import { ElementContainer } from './styles';
+import React from "react";
+import { ElementContainer } from "./styles";
 
-const Element = ({element}) => {
-    
-    return (
-        <ElementContainer element={element}>
-            <span>{element}</span>
-        </ElementContainer>
-    )
-}
+const Element = ({ element }) => {
+  return (
+    <ElementContainer element={element}>
+      <span>{element}</span>
+    </ElementContainer>
+  );
+};
 
-export default Element
+export default Element;

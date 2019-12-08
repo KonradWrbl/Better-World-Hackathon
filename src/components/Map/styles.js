@@ -36,4 +36,5 @@ export const BackButton = styled.button`
   display: block;
   width: 100%;
   z-index: 9;
+  outline: none;
 `;

@@ -25,7 +25,7 @@ const AdditionsSection = () => {
   return (
     <div>
       <StyledWrapper>
-        <StyledTitle> This week you saved </StyledTitle>
+        <StyledTitle> Your additions </StyledTitle>
         <ContentWrapper>
           {elems.map(item => (
             <Element key={item.symbol} element={item.symbol} />

@@ -10,4 +10,5 @@ export const MainContainer = styled.div`
   align-items: center;
   justify-content: space-around;
   display: ${window.location.pathname === "/login" ? "none" : "flex"};
+  z-index: 999;
 `;

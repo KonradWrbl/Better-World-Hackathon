@@ -18,6 +18,7 @@ export const SlideButton = styled.button`
   background: none;
   display: block;
   width: 100%;
+  outline: none;
 `;
 
 export const DropWrapper = styled.div`
